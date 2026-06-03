@@ -1,0 +1,28 @@
+cmd/api/main.go
+  s_c1a19d20b23f9e::t_29047f3a745f80 3-7
+Makefile
+  h_48a254d7a55339 4
+  s_c1a19d20b23f9e::t_a41fedee07231e 1-3,5-6,8-10
+  s_c1a19d20b23f9e::t_3d50c7f0798410 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "153c1e0d026ab5184ce92f2c99c7c6a85c857847",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c1a19d20b23f9e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e880c-2c2a-7473-987c-aceb46b9a0e4",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    }
+  }
+}
