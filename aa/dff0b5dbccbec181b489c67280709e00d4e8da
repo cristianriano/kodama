@@ -1,0 +1,19 @@
+Makefile
+  s_c1a19d20b23f9e::t_a41fedee07231e 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "aadff0b5dbccbec181b489c67280709e00d4e8da",
+  "prompts": {},
+  "sessions": {
+    "s_c1a19d20b23f9e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e880c-2c2a-7473-987c-aceb46b9a0e4",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
