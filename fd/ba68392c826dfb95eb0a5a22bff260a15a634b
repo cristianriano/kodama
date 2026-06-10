@@ -1,0 +1,16 @@
+Makefile
+  h_48a254d7a55339 4,17-21
+README.md
+  h_48a254d7a55339 31,34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "fdba68392c826dfb95eb0a5a22bff260a15a634b",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
