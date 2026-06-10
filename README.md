@@ -28,8 +28,10 @@ Telegram's webhook `secret_token` only allows letters, numbers, `_`, and `-`, so
 
 ```sh
 curl -X POST -H "X-Telegram-Bot-Api-Secret-Token: <TELEGRAM_WEBHOOK_SECRET>" localhost:8080/telegram/webhook \
--d '{"message": {"text": "Hi", "chat": {"id": TELEGRAM_ALLOWED_CHAT_ID}}}'
+-d '{"message": {"text": "Hi", "chat": {"id": <TELEGRAM_ALLOWED_CHAT_ID>}}}'
 ```
+
+Or use `make send MSG="Test"` to send a message using the values in `.env`
 
 ## Development
 

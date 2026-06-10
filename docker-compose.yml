@@ -1,0 +1,14 @@
+networks:
+  proxy:
+    external: true
+
+services:
+  kodama:
+    build: .
+    container_name: kodama
+    restart: unless-stopped
+    networks:
+      - proxy
+    environment:
+      TELEGRAM_ALLOWED_CHAT_ID: "${TELEGRAM_ALLOWED_CHAT_ID}"
+      TELEGRAM_WEBHOOK_SECRET: "${TELEGRAM_WEBHOOK_SECRET}"
