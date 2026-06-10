@@ -1,0 +1,18 @@
+README.md
+  h_48a254d7a55339 31,34
+Makefile
+  h_48a254d7a55339 4,17-21
+docker-compose.yml
+  h_48a254d7a55339 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f1160e218346a582b935ccc43a5086062f8f18dc",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
