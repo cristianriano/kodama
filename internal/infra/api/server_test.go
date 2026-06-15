@@ -108,6 +108,22 @@ func TestTelegramWebhook(t *testing.T) {
 	}
 }
 
+func TestHealthz(t *testing.T) {
+	server := NewServer(testLogger(), "secret", nil)
+
+	req := httptest.NewRequest(http.MethodGet, "/healthz", nil)
+	rec := httptest.NewRecorder()
+
+	server.Handler().ServeHTTP(rec, req)
+
+	if rec.Code != http.StatusOK {
+		t.Fatalf("status = %d, want %d", rec.Code, http.StatusOK)
+	}
+	if rec.Body.String() != "OK\n" {
+		t.Fatalf("body = %q, want %q", rec.Body.String(), "ok\n")
+	}
+}
+
 func testLogger() *slog.Logger {
 	return slog.New(slog.NewTextHandler(io.Discard, nil))
 }

@@ -31,8 +31,14 @@ func NewServer(logger *slog.Logger, telegramSecret string, chatHandler ChatHandl
 
 func (s *Server) Handler() http.Handler {
 	mux := http.NewServeMux()
+	mux.HandleFunc("GET /healthz", s.handleHealthz)
 	mux.HandleFunc("POST /telegram/webhook", s.handleTelegramWebhook)
 	return mux
+}
+
+func (s *Server) handleHealthz(w http.ResponseWriter, _ *http.Request) {
+	w.WriteHeader(http.StatusOK)
+	_, _ = w.Write([]byte("OK\n"))
 }
 
 func (s *Server) handleTelegramWebhook(w http.ResponseWriter, r *http.Request) {

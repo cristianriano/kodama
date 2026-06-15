@@ -47,3 +47,9 @@ Webhook endpoint:
 ```text
 POST /telegram/webhook
 ```
+
+Health endpoint:
+
+```text
+GET /healthz
+```
