@@ -1,0 +1,30 @@
+internal/infra/api/server_test.go
+  s_c1a19d20b23f9e::t_3bc1be8b5442c6 111-121,123-126
+  h_48a254d7a55339 122
+internal/infra/api/server.go
+  s_c1a19d20b23f9e::t_3bc1be8b5442c6 34,39-40
+  h_48a254d7a55339 41
+README.md
+  s_c1a19d20b23f9e::t_3bc1be8b5442c6 50-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "50e31a03e371787e1142f7e499d0c60e27115146",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c1a19d20b23f9e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e880c-2c2a-7473-987c-aceb46b9a0e4",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
