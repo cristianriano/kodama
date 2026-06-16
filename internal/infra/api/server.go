@@ -17,13 +17,15 @@ type ChatHandler interface {
 
 type Server struct {
 	logger         *slog.Logger
+	logRequests    bool
 	telegramSecret string
 	chatHandler    ChatHandler
 }
 
-func NewServer(logger *slog.Logger, telegramSecret string, chatHandler ChatHandler) *Server {
+func NewServer(logger *slog.Logger, telegramSecret string, chatHandler ChatHandler, logRequests bool) *Server {
 	return &Server{
 		logger:         logger,
+		logRequests:    logRequests,
 		telegramSecret: telegramSecret,
 		chatHandler:    chatHandler,
 	}
@@ -33,6 +35,9 @@ func (s *Server) Handler() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /healthz", s.handleHealthz)
 	mux.HandleFunc("POST /telegram/webhook", s.handleTelegramWebhook)
+	if s.logRequests {
+		return requestLogger(s.logger, mux)
+	}
 	return mux
 }
 

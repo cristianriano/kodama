@@ -24,6 +24,8 @@ Telegram's webhook `secret_token` only allows letters, numbers, `_`, and `-`, so
 
 `make run` loads `.env` through the Makefile. If you run the binary directly, provide the variables through the shell, systemd, Docker, or your process manager.
 
+Set `LOG_REQUESTS=true` to log request metadata such as method, path, status, duration, remote address, and user agent.
+
 3. Send a message to confirm everything works fine
 
 ```sh

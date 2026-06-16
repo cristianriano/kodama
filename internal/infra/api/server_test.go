@@ -81,7 +81,7 @@ func TestTelegramWebhook(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			messenger := &fakeMessenger{}
 			chatUseCase := chat.NewUseCase(123, messenger)
-			server := NewServer(testLogger(), "secret", chatUseCase)
+			server := NewServer(testLogger(), "secret", chatUseCase, false)
 
 			req := httptest.NewRequest(http.MethodPost, "/telegram/webhook", strings.NewReader(tt.body))
 			req.Header.Set(telegramSecretHeader, tt.headerSecret)
@@ -109,7 +109,7 @@ func TestTelegramWebhook(t *testing.T) {
 }
 
 func TestHealthz(t *testing.T) {
-	server := NewServer(testLogger(), "secret", nil)
+	server := NewServer(testLogger(), "secret", nil, true)
 
 	req := httptest.NewRequest(http.MethodGet, "/healthz", nil)
 	rec := httptest.NewRecorder()

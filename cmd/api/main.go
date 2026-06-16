@@ -31,7 +31,7 @@ func main() {
 
 	messenger := telegram.NewConsoleMessenger(logger)
 	chatUseCase := chat.NewUseCase(cfg.TelegramAllowedChatID, messenger)
-	apiServer := api.NewServer(logger, cfg.TelegramWebhookSecret, chatUseCase)
+	apiServer := api.NewServer(logger, cfg.TelegramWebhookSecret, chatUseCase, cfg.LogRequests)
 
 	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
 	defer stop()
