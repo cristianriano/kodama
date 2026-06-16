@@ -28,6 +28,8 @@ Telegram's webhook `secret_token` only allows letters, numbers, `_`, and `-`, so
 
 Set `LOG_REQUESTS=true` to log request metadata such as method, path, status, duration, remote address, and user agent.
 
+Set `TELEGRAM_API_TIMEOUT=10s` to control how long Kodama waits when calling Telegram APIs.
+
 3. Send a message to confirm everything works fine
 
 ```sh
@@ -45,7 +47,7 @@ make test
 make build
 make docker-build
 make docker-deploy
-make set-webhook
+make set-webhook # Change webhook url or clear update pending queue
 make get-webhook
 ```
 

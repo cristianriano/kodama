@@ -29,7 +29,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	httpClient := &http.Client{Timeout: timeout}
+	httpClient := &http.Client{Timeout: cfg.TelegramAPITimeout}
 	messenger := telegram.NewClient(cfg.TelegramBotToken, httpClient)
 	chatUseCase := chat.NewUseCase(cfg.TelegramAllowedChatID, messenger)
 	apiServer := api.NewServer(logger, cfg.TelegramWebhookSecret, chatUseCase, cfg.LogRequests)

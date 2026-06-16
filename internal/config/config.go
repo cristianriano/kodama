@@ -12,6 +12,7 @@ type Config struct {
 	Addr                  string
 	LogRequests           bool
 	TelegramAllowedChatID int64
+	TelegramAPITimeout    time.Duration
 	TelegramBotToken      string
 	TelegramWebhookSecret string
 	ShutdownTimeout       time.Duration
@@ -21,6 +22,7 @@ func Load() (Config, error) {
 	cfg := Config{
 		Addr:                  env("ADDR", ":8080"),
 		LogRequests:           false,
+		TelegramAPITimeout:    10 * time.Second,
 		TelegramBotToken:      env("TELEGRAM_BOT_TOKEN", ""),
 		TelegramWebhookSecret: env("TELEGRAM_WEBHOOK_SECRET", ""),
 		ShutdownTimeout:       10 * time.Second,
@@ -33,6 +35,15 @@ func Load() (Config, error) {
 			return Config{}, fmt.Errorf("parse LOG_REQUESTS: %w", err)
 		}
 		cfg.LogRequests = parsedLogRequests
+	}
+
+	telegramAPITimeout := env("TELEGRAM_API_TIMEOUT", "")
+	if telegramAPITimeout != "" {
+		parsedTelegramAPITimeout, err := time.ParseDuration(telegramAPITimeout)
+		if err != nil {
+			return Config{}, fmt.Errorf("parse TELEGRAM_API_TIMEOUT: %w", err)
+		}
+		cfg.TelegramAPITimeout = parsedTelegramAPITimeout
 	}
 
 	allowedChatID := env("TELEGRAM_ALLOWED_CHAT_ID", "")

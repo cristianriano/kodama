@@ -10,9 +10,9 @@ docker-build:
 	docker build -t kodama:latest .
 
 docker-deploy:
-	-docker-compose down
-	docker-compose build
-	docker-compose up -d
+	-docker compose down
+	docker compose build
+	docker compose up -d
 
 run:
 	@go run ./cmd/api
