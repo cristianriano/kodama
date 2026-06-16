@@ -1,0 +1,32 @@
+README.md
+  h_48a254d7a55339 17
+  s_c1a19d20b23f9e::t_feaf0c93992021 18
+  s_c1a19d20b23f9e::t_39a37fdd0578be 47-49
+Makefile
+  s_c1a19d20b23f9e::t_3701969d21886c 24-26,34
+  s_c1a19d20b23f9e::t_39a37fdd0578be 4,12-16,23,27-33,35-36,40
+.env.example
+  s_c1a19d20b23f9e::t_39a37fdd0578be 7-8
+  s_c1a19d20b23f9e::t_feaf0c93992021 1,5-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "9f34067db4f92dd59f59ea6bf125931bc5a80fbe",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c1a19d20b23f9e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e880c-2c2a-7473-987c-aceb46b9a0e4",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
