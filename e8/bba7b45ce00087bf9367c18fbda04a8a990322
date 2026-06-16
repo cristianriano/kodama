@@ -1,0 +1,39 @@
+internal/infra/api/request_logger.go
+  s_f88e10722e437a::t_a4a3cbd2561d3e 1-38
+docker-compose.yml
+  s_f88e10722e437a::t_a4a3cbd2561d3e 15
+README.md
+  s_f88e10722e437a::t_a4a3cbd2561d3e 27-28
+internal/infra/api/server_test.go
+  h_48a254d7a55339 112
+  s_f88e10722e437a::t_a4a3cbd2561d3e 84
+internal/infra/api/server.go
+  s_f88e10722e437a::t_a4a3cbd2561d3e 20,25,28,38-40
+.env.example
+  s_f88e10722e437a::t_a4a3cbd2561d3e 3
+cmd/api/main.go
+  s_f88e10722e437a::t_a4a3cbd2561d3e 34
+internal/config/config.go
+  s_f88e10722e437a::t_a4a3cbd2561d3e 13,22,27-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "e8bba7b45ce00087bf9367c18fbda04a8a990322",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_f88e10722e437a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ecef6-2f96-7262-a0c4-6833242f731c",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
