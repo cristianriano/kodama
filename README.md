@@ -14,7 +14,7 @@ Kodama is designed as a small Go service for a personal AI assistant. It receive
 cp .env.example .env
 ```
 
-_NOTE: `.env.example` is split into app runtime variables and deployment variables. The running app needs the Telegram chat ID and webhook secret; the Make targets for webhook setup also need the bot token and public URL._
+_NOTE: `.env.example` is split into app runtime variables and deployment variables. The running app needs the Telegram chat ID, bot token, and webhook secret; the Make targets for webhook setup also need the public URL._
 
 2. Generate a webhook secret with:
 
