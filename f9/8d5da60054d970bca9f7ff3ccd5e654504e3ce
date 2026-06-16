@@ -1,0 +1,32 @@
+.env.example
+  s_c1a19d20b23f9e::t_ea2c532de82bd1 3
+README.md
+  s_c1a19d20b23f9e::t_ea2c532de82bd1 31-32
+internal/config/config.go
+  s_c1a19d20b23f9e::t_ea2c532de82bd1 15,25,40-46
+Makefile
+  h_48a254d7a55339 13-15
+cmd/api/main.go
+  s_c1a19d20b23f9e::t_ea2c532de82bd1 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "f98d5da60054d970bca9f7ff3ccd5e654504e3ce",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c1a19d20b23f9e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e880c-2c2a-7473-987c-aceb46b9a0e4",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
