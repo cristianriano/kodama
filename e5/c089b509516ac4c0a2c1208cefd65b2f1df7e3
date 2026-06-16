@@ -1,0 +1,37 @@
+README.md
+  s_c1a19d20b23f9e::t_bb75fff980d3d4 17
+internal/infra/telegram/client.go
+  s_c1a19d20b23f9e::t_d84d51dfe931e0 4,6-9,12-17,20-29,32-69,72-93
+.env.example
+  s_c1a19d20b23f9e::t_6e7488f58ef7c3 3
+internal/infra/telegram/client_test.go
+  s_c1a19d20b23f9e::t_8123cc225b4780 4,7,12-17,20-38,40-41,56-63,68-78
+  s_c1a19d20b23f9e::t_6e7488f58ef7c3 1-3,5-6,8-11,18-19,39,42-55,64-67,79-80
+internal/config/config.go
+  s_c1a19d20b23f9e::t_6e7488f58ef7c3 15,24,52-53
+docker-compose.yml
+  s_c1a19d20b23f9e::t_6e7488f58ef7c3 14
+cmd/api/main.go
+  s_c1a19d20b23f9e::t_6e7488f58ef7c3 32-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "e5c089b509516ac4c0a2c1208cefd65b2f1df7e3",
+  "prompts": {},
+  "humans": {
+    "h_48a254d7a55339": {
+      "author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c1a19d20b23f9e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e880c-2c2a-7473-987c-aceb46b9a0e4",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Cristian Riano <cristiancarm11@gmail.com>"
+    }
+  }
+}
